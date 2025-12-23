@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - SnapFolio Bootstrap Template</title>
+  <title>Olivia's Portofolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -45,7 +45,10 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li class="dropdown"><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+              <ul>
+                <li><a href="#stats">Skills Statistics</a></li>
+                <li><a href="#">Dropdown 1</a></li>
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
           <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
@@ -99,7 +102,7 @@
 
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
               <div class="hero-text">
-                <h1>Hello<span class="accent-text">I'm</span></h1>
+               <h1>Hello&nbsp;<span class="accent-text">I'm</span></h1>
                 <h2>Olivia Gustri Amanda</h2>
                 <p class="lead">I'm a <span class="typed" data-typed-items="Digital Marketing Analyst, Web Developer, Photographer"></span></p>
                 <p class="description"></p>
@@ -157,7 +160,7 @@
                 <div class="contact-links">
                   <a href="mailto:oliviagustri@gmail.com" class="contact-item">
                     <i class="bi bi-envelope"></i>
-                    oliviagustr@gmail
+                    oliviagustri@gmail
                   </a>
                   <a href="tel:+886 9836977" class="contact-item">
                     <i class="bi bi-telephone"></i>
@@ -165,7 +168,7 @@
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
-                    San Francisco, CA
+                    Hualien City, Taiwan
                   </a>
                 </div>
               </div>
@@ -181,7 +184,7 @@
 
               <div class="description">
               
-                <p>Hi, I’m Olivia Gustri Amanda, a Digital Marketing Analyst from East Java. I turn insights into action, code into experiences, and moments into stories—driven by curiosity and a passion for growth.</p>
+                <p>Hi, I’m Olivia Gustri Amanda, a Digital Marketing Analyst from East Java, Indonesia. I turn insights into action, code into experiences, and moments into stories—driven by curiosity and a passion for growth.</p>
                 <p>Let's bring your vision to life.</p>
               </div>
 
@@ -244,6 +247,12 @@
     <!-- Stats Section -->
     <section id="stats" class="stats section light-background">
 
+       <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Project & Client Statistics</h2>
+        <p>The numbers below summarize my completed projects and overall customer satisfaction to date.</p>
+      </div><!-- End Section Title -->
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center">
@@ -294,7 +303,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Bridging the gap between data-driven strategy, technical execution, and visual storytelling.</p>
+        <p>Each percentage reflects my current level of proficiency in the listed skills, evaluated through real-world projects, practical usage, and ongoing development.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -410,7 +419,7 @@
           </ul>
 
           <div class="skills-animation mt-4">
-            <h3>Top Skills (5-Year Goal)</h3>
+            <h3>Top Skills</h3>
             
             <div class="skill-item">
               <div class="d-flex justify-content-between">
@@ -486,9 +495,9 @@
         <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
           <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
           <div class="resume-item">
-            <h4>Bachelor of Science in Digital Marketing & Analytics</h4>
+            <h4>Bachelor Degree in International Service Industry Management</h4>
             <h5>2021 - 2025</h5>
-            <p class="company"><i class="bi bi-building"></i> Your University Name</p>
+            <p class="company"><i class="bi bi-building"></i> Tzu Chi University</p>
             <p>Specialized in Data Science and Consumer Behavior. Minor in Visual Communications.</p>
           </div>
         </div>
@@ -674,7 +683,7 @@
           <p>
             I integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
           </p>
-          <a href="services.html" class="service-btn">
+          <a href="#allservices" class="service-btn">
             View All Services
             <i class="bi bi-arrow-right"></i>
           </a>
@@ -683,7 +692,7 @@
         </div>
       </div>
 
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="allservices">
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
         <div class="service-card position-relative z-1">
           <div class="service-icon">
@@ -750,7 +759,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Below are a few kind words and experiences shared by customers I’ve worked with.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -762,14 +771,15 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Implementing innovative strategies has revolutionized our approach to market challenges and competitive positioning.</p>
+              <p>Our online traffic and conversion rates increased significantly after working with her. His data-driven digital marketing strategies delivered real, measurable results.”
+</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="assets/img/person/person-f-7.webp" alt="Client">
                 </div>
                 <div class="client-details">
                   <h3>Rachel Bennett</h3>
-                  <span class="position">Strategy Director</span>
+                  <span class="position">- Marketing Manager, BrightWave Solutions</span>
                 </div>
               </div>
             </div>
@@ -780,14 +790,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints.</p>
+              <p>She built a fast, modern, and user-friendly website that perfectly represents our brand. Communication and delivery were excellent.”</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="assets/img/person/person-m-7.webp" alt="Client">
                 </div>
                 <div class="client-details">
                   <h3>Daniel Morgan</h3>
-                  <span class="position">Chief Innovation Officer</span>
+                  <span class="position">- CEO, NexaTech Innovations</span>
                 </div>
               </div>
             </div>
@@ -798,14 +808,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Strategic partnership has enabled seamless digital transformation and operational excellence.</p>
+              <p>The photos exceeded our expectations. His attention to detail and creative vision helped elevate our brand visuals.”</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="assets/img/person/person-f-8.webp" alt="Client">
                 </div>
                 <div class="client-details">
                   <h3>Emma Thompson</h3>
-                  <span class="position">Digital Lead</span>
+                  <span class="position">- Creative Director, UrbanLens Studio</span>
                 </div>
               </div>
             </div>
@@ -816,14 +826,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics.</p>
+              <p>Her analytical approach helped us understand our audience better and optimize our campaigns. We saw a clear ROI improvement.”</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="assets/img/person/person-m-8.webp" alt="Client">
                 </div>
                 <div class="client-details">
                   <h3>Christopher Lee</h3>
-                  <span class="position">Technical Director</span>
+                  <span class="position">- Growth Lead, MarketPulse Agency</span>
                 </div>
               </div>
             </div>
@@ -834,14 +844,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Collaborative approach and industry expertise have revolutionized our product development cycle, resulting in faster time-to-market and increased customer engagement levels.</p>
+              <p>The website redesign improved both performance and user experience. Our customers now find it easier to navigate and engage.”</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="assets/img/person/person-f-9.webp" alt="Client">
                 </div>
                 <div class="client-details">
                   <h3>Olivia Carter</h3>
-                  <span class="position">Product Manager</span>
+                  <span class="position">- Operations Manager, BlueOrbit Services</span>
                 </div>
               </div>
             </div>
@@ -852,14 +862,14 @@
               <div class="quote-pattern">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates.</p>
+              <p>Professional, creative, and reliable. The photography work added strong visual consistency across our website and social media.”</p>
               <div class="client-info">
                 <div class="client-image">
                   <img src="assets/img/person/person-m-13.webp" alt="Client">
                 </div>
                 <div class="client-details">
                   <h3>Nathan Brooks</h3>
-                  <span class="position">UX Director</span>
+                  <span class="position">- Brand Manager, VisionCraft Co.</span>
                 </div>
               </div>
             </div>
