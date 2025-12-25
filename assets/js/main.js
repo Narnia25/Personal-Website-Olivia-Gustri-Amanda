@@ -227,3 +227,24 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+const form = document.getElementById("contactForm");
+
+const loading = document.querySelector(".loading");
+const sentMessage = document.querySelector(".sent-message");
+const errorMessage = document.querySelector(".error-message");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // stop page refresh
+
+  loading.style.display = "block";
+  sentMessage.style.display = "none";
+  errorMessage.style.display = "none";
+
+  // fake sending delay (frontend demo)
+  setTimeout(() => {
+    loading.style.display = "none";
+    sentMessage.style.display = "block";
+    form.reset();
+  }, 1500);
+});

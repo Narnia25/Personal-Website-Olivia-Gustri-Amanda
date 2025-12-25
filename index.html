@@ -27,6 +27,13 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+
   <!-- =======================================================
   * Template Name: SnapFolio
   * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
@@ -43,13 +50,12 @@
 
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
-        <ul>
+        <ul class="navmenu-list">
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li class="dropdown"><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-              <ul>
-                <li><a href="#stats">Skills Statistics</a></li>
-                <li><a href="#">Dropdown 1</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#about"><i class="bi bi-file-earmark-text navicon"></i> About</a></li>
+          <li><a href="#stats"><i class="bi bi-bar-chart-line navicon"></i>Projects' Statistics</a></li>
+          <li><a href="#skills"><i class="bi bi-check2-square navicon"></i>Skills' Statistics</a></li>
+          <li><a href="#resume"><i class="bi bi-person navicon"></i> Resume</a></li>
           <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
           <!--<li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -74,11 +80,13 @@
       </nav>
 
       <div class="social-links text-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Narnia25" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.flickr.com/people/201924211@N03/" class="flickr">
+    <i class="fa-brands fa-flickr"></i>
+  </a>
+        <a href="https://www.instagram.com/oliviagustria" class="instagram"><i class="bi bi-instagram"></i></a>
+        <!-- <a href="https://profile.indeed.com/?hl=nl_NL&co=NL&from=gnav-homepage" class="indeed"><i class="fa-brands fa-indeed"></i></a> -->
+        <a href="https://www.linkedin.com/in/oliviagustriamanda" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -166,7 +174,7 @@
                     <i class="bi bi-telephone"></i>
                     +1 (555) 123-4567
                   </a>
-                  <a href="#" class="contact-item">
+                  <a href="https://maps.app.goo.gl/T54AWfSGU7yggzkf8" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
                     Hualien City, Taiwan
                   </a>
@@ -520,7 +528,7 @@
       </div>
     </div>
   </div>
-</section>```
+</section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -683,10 +691,10 @@
           <p>
             I integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
           </p>
-          <a href="#allservices" class="service-btn">
+          <!-- <a href="#allservices" class="service-btn">
             View All Services
             <i class="bi bi-arrow-right"></i>
-          </a>
+          </a> -->
           </div>
         </div>
         </div>
@@ -903,8 +911,8 @@
                 </div>
                 <div class="content">
                   <h4>Location</h4>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <p>Jieren Street No. 67</p>
+                  <p>Hualien City, Taiwan</p>
                 </div>
               </div>
 
@@ -925,47 +933,52 @@
                 </div>
                 <div class="content">
                   <h4>Email Address</h4>
-                  <p>olivia@example.com</p>
-                  <p>oliviagust@example.com</p>
+                  <p>olivia@gmail.com</p>
+                  <p>oliviagustri@gmail.com</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <div class="contact-form">
-              <h3>Get In Touch</h3>
-                <!--<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>-->
+  <div class="contact-form">
+    <h3>Get In Touch</h3>
 
-                
-                <div class="row gy-4">
+    <form id="contactForm">
+      <div class="row gy-4">
 
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
 
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
+        <div class="col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
 
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
+        <div class="col-12">
+          <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+        </div>
 
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
+        <div class="col-12">
+          <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+        </div>
 
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+        <div class="col-12 text-center">
+          <div class="loading" style="display:none;">Loading...</div>
+          <div class="error-message" style="display:none;"></div>
+          <div class="sent-message" style="display:none;">
+            Your message has been sent. Thank you!
+          </div>
 
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
+          <button type="submit" class="btn">Send Message</button>
+        </div>
 
-                </div>
-              </form>
+      </div>
+    </form>
+
+  </div>
+</div>
+
 
             </div>
           </div>
