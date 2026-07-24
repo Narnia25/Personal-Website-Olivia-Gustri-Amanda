@@ -188,17 +188,19 @@ h6 {
   background: var(--accent-color);
 }
 
-@media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
-    margin-left: 330px;
-  }
-}
-
 @media (max-width: 1199px) {
   .header {
     left: -100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    left: -100%;
+  }
+
+  .header .header-toggle {
+    display: flex;
   }
 }
 
