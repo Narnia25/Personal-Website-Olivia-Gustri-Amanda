@@ -2566,3 +2566,23 @@ section,
   transition: none !important;
 }
 
+.sidebar-cta {
+  padding: 30px 20px;
+}
+
+.sidebar-cta h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sidebar-cta p {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.sidebar-cta .btn {
+  border-radius: 30px;
+  font-weight: 600;
+}
