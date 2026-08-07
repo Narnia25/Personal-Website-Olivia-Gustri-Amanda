@@ -679,10 +679,32 @@ section,
   border-color: var(--accent-color);
 }
 
-.hero .hero-actions .btn.btn-outline:hover {
+..hero .hero-actions .btn.btn-outline:hover {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
+}
+
+.resume .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.resume .btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), black 10%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .hero .social-links {
